@@ -1,0 +1,42 @@
+---
+title: "Maths Equation"
+author: "Mr. Ahmad Ilu"
+date: "February 5, 2022"
+output: pdf_document
+---
+# Commnents
+ * Option 1 
+<!-- Add some comments here -->
+ 
+# Tips to Writing Equations in Rmarkdown
+
+-   library(rmarkdown)
+-   library(tinytex)
+
+$$
+\begin{aligned}
+Resemblance_{ij} &= \hat{\gamma}_{0j} + \hat{\gamma}_{1}Intervention_{ij}+ e_{ij}\\
+\hat{\gamma}_{oj} &=  \hat{\gamma}_0 + \hat{\mu}_{0j}
+\end{aligned}
+$$
+$$
+y = \beta x_{1} + \beta x_{2} + \mu_{t}
+$$
+$$
+\max _{a+s, k_{t+s, l_{t+s}}} V_{t}=E_{t} \sum_{s=0}^{\infty} \beta^{s}\left\{\ln \left(c_{t+s}\right)+\theta \ln \left(l_{t+s}\right)\right\}
+$$
+
+$4+2$
+$\sqrt{16}$
+$\sqrt[3]{27}$
+$\frac{x}{y}$
+$A^{x}_{y}$
+$\sum_{k=1}^n k$
+$2\ne 4$
+$\phi\in\Psi$
+$180^{\circ}C$
+
+
+
+
+
