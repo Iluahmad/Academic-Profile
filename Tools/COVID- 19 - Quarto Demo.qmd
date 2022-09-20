@@ -1,0 +1,24 @@
+---
+title: "Quarto Demo"
+author: "Mr. Ahmad Ilu"
+format: pdf
+editor: visual
+---
+
+## Quarto
+
+**SAMPLE DOCUMENT**
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+My first Quarto Document via Rstudio, going forward i have gotten an additional alternative alongside Rmarkdown and Latex for my academic writings and Document preparation . Not a bad Idea!
+
+# [An Assessment of Statistical Accuracy of COVID-19 Test Conducted in Nigeria]{.underline}
+
+## 1.0 [Introduction]{.underline}
+
+-   **Sensitivity** is defined as the proportion of positive results out of the number of samples which were actually positive. In other words, the probability that the test reports a person has the disease when in fact they do have the disease.  Alternatively, it can be referred to as True Positives while **Specificity is** defined as the proportion of negative results out of the number of samples which were actually negative. Similarly, the probability that the test reports a person does not have the disease given that they are free of the disease. Alternatively, it can be referred to as True Negatives. Also associated with these terms are Predictive values, false Positive and false negative.
+
+-   **Positive Predictive Value** (PPV) is defined as the proportion of people with a positive result that are actually have the disease whilst **Negative Predictive Value** (NPV) test result that are actually is defined as the proportion of people with a negative test result that are disease free. Both PPV and NPV are easily derived using the Bayes' Theorem/Rule.
+
+-   **Bayes' Theorem** is the application of conditional probability of an event based on a prior knowledge. Initial belief of a particular event is expressed as a probability termed as prior probability whilst the updated knowledge of an event given additional knowledge is termed as Posterior probability. Bayes' rule is named after a British Mathematician Reverend Thomas Bayes (1702-1761).   
