@@ -1,6 +1,5 @@
 # Academic-Profile
-## Academics 
-### Research Interest 
+## Research Interest 
 * Macroeconomics; Macro Modelling, Growth Models and Business Cycles
 * Financial Economics; Stock returns, Volatility, ARCH & GARCH, Wavelets 
 * Monetary Economics: Tools for Monetary and Fiscal policy blend  
