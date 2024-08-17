@@ -20,7 +20,7 @@ The Data used in this brief Geospatial note are sourced from from [Wikipedia](ht
 - Cases of Open defecation is more prevalent in Kwara State at $\%64$ compared to $\%2$ in Abia and Zamfara States and also higher than National Average of $\%23$.
 - Almost half of Jigawa population has access to basic hygiene service compared to only 1% of citizens in Ebonyi state.
 
-## R Markdown
+## Flash!
 This is a rough sketch of Nigeria's map structure.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
