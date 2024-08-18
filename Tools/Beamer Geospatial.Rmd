@@ -61,7 +61,32 @@ merged_data %>% ggplot()+ geom_sf(aes(fill = Population/1e6), color = 'white', l
 
 ```
 
-## Slide with Access to Basic Water %
+## Nigerian States and thier Population
+```{r echo=FALSE}
+# Population
+merged_data %>% 
+tm_shape()+
+  tm_polygons("Population", 
+              palette = c( "#347fc1", "#abdea3","yellow","#ffffbe","#feaf62"), 
+              title = "Nigerian States and thier Population",
+              legend.format = list(text.separator = "-"))+ tm_text( "statename", 
+          col = "black",
+          #          auto.placement = TRUE,
+          size = .5)+
+  tm_layout(
+    main.title = "Nigerian States and thier Population",
+    legend.position = c("right", "bottom"))+
+  tm_scale_bar(breaks = c(0,25,50), text.size = .8, position = c("left","bottom"))+
+  tm_credits(text = "Source: Wikipedia 2024", size = 0.6, fontface = "bold", position = c("right","top"))+
+  tm_compass(type = "4star",size = 1,
+             position = c("left","top"), 
+             cardinal.directions = c('North'),
+             bg.color = 'red',
+             bg.alpha = .13)
+
+```
+
+## Access to Basic Water %
 ```{r echo=FALSE}
 # Access to Basic Water %
 merged_data %>% 
