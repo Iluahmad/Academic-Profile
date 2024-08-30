@@ -1,0 +1,73 @@
+\documentclass[14pt,a4paper]{article}
+\usepackage[dvips]{graphicx}    %package that does pdfs
+\usepackage{color}              %this needs to be here also
+\title{\textbf{Wage Indexation Explainer}}
+\author{\textbf{Ahmad Ilu} \thanks{Economist/Policy Researcher\\
+Nigerian Economic Summit Group(NESG) \\
+Email: ahmad.ilu@nesgroup.org}}
+\date{July 25, 2024}
+\begin{document}
+\maketitle
+Wage indexation is the process of adjusting wages to account for changes in the cost of living, usually measured by an inflation index. The formula for wage indexation typically links wage increases to an inflation measure like the Consumer Price Index (CPI).\\ 
+ A common formula for Full wage indexation is:
+\begin{equation}
+ W_t = W_{t-1} \times \left(1 + \frac{\Delta CPI}{CPI_{t-1}}\right)
+\label{eqn:full indexation} 
+\end{equation}
+Where: \\
+$ W_t$ = Wage at time t  \\
+$ \Delta CPI$  = Change in the Consumer Price Index over the period \\
+$ CPI_{t-1}$  = Consumer Price Index at the previous time period \\
+Let's use the provided CPI data for Nigeria to determine the appropriate wage indexation for Nigerian workers from 2014 to 2023. \\
+\textbf{Step-by-Step Calculation} \\
+\begin{itemize}
+\item\textit{Calculate the Change in CPI:}   \\
+
+$ \Delta CPI = CPI_{2023} - CPI_{2014} $ \\
+$ \Delta CPI = 733 - 157 = 576 $ \\
+
+\item \textit{Calculate the Percentage Change in CPI:} \\
+$\frac{\Delta CPI}{CPI_{201}} = \frac{576}{157} \approx 3.669 or 366.9\% $ \\ 
+
+\item \textit{Apply the Wage Indexation Formula:} 
+
+  $ W_{2023} = W_{2014} \times (1 + \frac{\Delta CPI}{CPI_{2014}})$ \\
+  If the wage in 2014 $(W_{2014})$ was 18,000\textbf{NGN}: \\
+  $ W_{2023} = 18,000 \times (1 + 3.669)= 18,000 \times 4.669 = 84,042$      \textbf{NGN}\\  
+  \end{itemize}
+This means that to maintain the same purchasing power, the wages in 2023 should be 84,042 NGN if they were 18,000 NGN in 2014, reflecting the 366.9\% increase in the Consumer Price Index over this period. \\
+
+There are several alternative formulas for wage indexing that can be used to adjust wages in response to inflation or other economic factors. Here are a few examples: \\
+\begin{enumerate}
+\item \textbf{Partial Indexation Formula} \\
+Partial indexation adjusts wages by a fraction of the CPI change, rather than the full amount. This can be useful in situations where employers want to share the burden of inflation with employees. \\
+\begin{equation}
+ W_t = W_{t-1} \times \left(1 + \alpha \times \frac{\Delta CPI}{CPI_{t-1}}\right)
+\end{equation}
+Where: \\
+$\alpha$ = Fraction of the CPI change applied to wages (e.g. 0.5 / 50%)
+\\
+\item \textbf{Capped Indexation Formula}\\
+Capped indexation sets a maximum limit on the wage increase to prevent excessive adjustments during periods of high inflation. \\
+\begin{equation}
+W_t = W_{t-1}\times(1+ min \left(\frac{\Delta CPI}{CPI_{t-1}}, Cap\right)
+\end{equation}
+Where: \\
+Cap = Maximum percentage increase allowed \\
+\item \textbf{Sliding Scale Indexation Formula} \\
+Sliding scale indexation adjusts wages based on different inflation rate brackets, providing more nuanced adjustments.
+\begin{equation}
+W_t = W_{t-1} \times \left(1 + \sum_{i=1}^{n} \alpha_i \times \frac{\Delta CPI_i}{CPI_{t-1}}\right)
+\end{equation}
+Where: \\
+ $\alpha_{i}$ = Weight for each inflation bracket \textit{i} \\
+ $\Delta CPI_{i}$ = CPI change within bracket \textit{i} \\
+\item \textbf{Productivity-Linked Indexation Formula}\\ 
+This formula incorporates productivity changes along with inflation to determine wage adjustments.
+\begin{equation}
+W_t = W_{t-1} \times \left(1 + \frac{\Delta CPI}{CPI_{t-1}} + \Delta P\right)
+\end{equation}
+Where:\\
+$\Delta_{P}$ = Change in productivity (e.g., percentage increase in output per worker)
+\end{enumerate}
+\end{document}
