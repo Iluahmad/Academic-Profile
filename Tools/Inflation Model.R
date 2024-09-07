@@ -1,0 +1,27 @@
+library(tidyverse)
+library(forecast)
+library(tseries)
+library(urca)
+library(TSstudio)
+library(readxl)
+Energy_Data <- read_excel("C:/Users/Ahmad Ilu/Desktop/PC/Lenovo 2023/ACCER 2020/RESEARCH COLLECTION/Latex Practice/Energy Conference/Energy Data.xlsx",sheet = "Sheet1")
+View(Energy_Data)
+head(Energy_Data)
+# Creating the three Time Series Objectives
+S <- ts(Energy_Data$`Exchange Rate`, start = c(2010,1,1), frequency = 12)
+pi <- ts(Energy_Data$`Inflation Rate`, start = c(2010,1,1), frequency = 12)
+PMS <- ts(Energy_Data$PMS, start = c(2010,1,1), frequency = 12)
+# Time Series Plots
+ts_plot(S, title = "Avearge Monthly Exchange Rate", Xtitle = "Time", Ytitle = "Exchange Rate")
+ts_plot(pi, title = "Inflation Rate", Xtitle = "Time", Ytitle = "Inflation Rate")
+ts_plot(PMS, title = "Average PMS Price per Litre", Xtitle = "Time", Ytitle = "PMS")
+sv <- cbind(S, pi, PMS)
+colnames(sv) <- cbind("Exchange Rate", "Inflation Rate", "PMS")
+#Building the Final Forecast Model
+finalfit <- auto.arima(pi, seasonal = TRUE)
+autoplot(finalfit)
+check_res(finalfit)
+#Generating the Forecast
+fcastf <- forecast(pi, model = finalfit, h = 4)
+plot_forecast(fcastf,title = "Inflation Forecast for August, September, October, November", Xtitle = "Time", Ytitle = "Inflation Rate", width = 1.5)
+summary(fcastf)
