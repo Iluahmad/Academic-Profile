@@ -1,0 +1,187 @@
+---
+title: "Nigeria's Geospatial"
+author: "Mr. Ahmad Ilu"
+format:
+ revealjs:
+    footer: "Ahmad Ilu is an emerging Macroeconomist"
+    transition: concave
+date: "`r Sys.Date()`"
+logo: "Finmetrics.png"
+title-slide-attributes: 
+  data-background-color: "#00308F"
+toc: true
+institute: 
+ - ahmad.ilu@nesgroup.org
+ - Economist / Policy Researcher
+ - Nigerian Economic Summit Group (NESG)
+about: marquee
+editor: visual
+---
+
+## Key Takeaways
+
+The Data used in this brief Geospatial note are sourced from from [Wikipedia](https://en.wikipedia.org/wiki/States_of_Nigeria), [NBS(2019)](file:///C:/Users/Ahmad%20Ilu/Downloads/2019%20WASH%20NORM%20SURVEY%20FINDINGS%20-%20INFOGRAPHIC%20SUMMARY.pdf) and [Federal Ministry of Health](https://hfr.health.gov.ng/statistics/tables). Also the codes and data can be accessed on my [Github](https://github.com/Iluahmad/Academic-Profile) page.
+
+-   only 9% Have access to basic water,sanitation, hygiene services
+-   70% Use basic drinking water services ( People living in Lagos are three times more likely to use basic water supply services than those living in Taraba)
+-   9 liters Average per capita volume of water per day for the rural population
+-   46 million Practice open defecation
+-   Cases of Open defecation is more prevalent in Kwara State at $\%64$ compared to $\%2$ in Abia and Zamfara States and also higher than National Average of $\%23$.
+-   Almost half of Jigawa population has access to basic hygiene service compared to only 1% of citizens in Ebonyi state.
+
+## Flash!
+
+This is a rough sketch of Nigeria's map structure.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(sf)
+library(ggplot2)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(dplyr)
+library(tmap)
+library(gridExtra)
+library(readxl)
+```
+
+```{r echo=FALSE}
+Nigerian_States <- read_excel("C:/Users/Ahmad Ilu/Downloads/Nigerian States.xlsx", sheet = "Sheet1")
+```
+
+```{r echo=FALSE}
+View(Nigerian_States)
+```
+
+```{r include=FALSE}
+#Loading the Shape Data
+  ng_sf <- st_read(dsn = "C:/Users/Ahmad Ilu/Downloads/NGA_State_Boundaries_V2_-8623244326519598647/grid3_nga_boundary_vaccstates.shp")
+```
+
+```{r echo=FALSE}
+ng_sf %>% ggplot() + geom_sf()+ ggthemes::theme_map()
+```
+
+```{r include=FALSE}
+# Wrangling the Data
+merged_data = ng_sf %>% left_join(Nigerian_States, by = c( 'statename'))
+merged_data 
+```
+
+## Nigeria's Population
+
+```{r echo=FALSE}
+merged_data %>% ggplot()+ geom_sf(aes(fill = Population/1e6), color = 'white', lwd = 0.3)+ labs(title ="Nigerian Geospatial", fill = "Population\n(millions)")+ scale_colour_viridis_d() + ggthemes::theme_map()+ theme(legend.position = 'top', legend.title = element_text(face = "bold"), plot.title = element_text(size = 50,color = "steelblue", hjust = 0.5, face = "bold" ) )
+
+```
+
+## Nigerian States and thier Population
+
+```{r echo=FALSE}
+# Population
+Population= merged_data %>% 
+tm_shape()+
+  tm_polygons("Population", 
+              palette = c( "#347fc1", "#abdea3","yellow","#ffffbe","#feaf62"), 
+              title = "Nigerian States and thier Population",
+              legend.format = list(text.separator = "-"))+ tm_text( "statename", 
+          col = "black",
+          #          auto.placement = TRUE,
+          size = .5)+
+  tm_layout(
+    main.title = "Nigerian States and thier Population",
+    legend.position = c("right", "bottom"))+
+  tm_scale_bar(breaks = c(0,25,50), text.size = .8, position = c("left","bottom"))+
+  tm_credits(text = "Source: Wikipedia 2024", size = 0.6, fontface = "bold", position = c("right","top"))+
+  tm_compass(type = "4star",size = 1,
+             position = c("left","top"), 
+             cardinal.directions = c('North'),
+             bg.color = 'red',
+             bg.alpha = .13)
+Population
+```
+
+## Access to Basic Water %
+
+```{r echo=FALSE}
+# Access to Basic Water %
+Water= merged_data %>% 
+  tm_shape()+
+  tm_polygons("Access to Water %", 
+              palette = c( "#347fc1", "#abdea3","blue","steelblue","#feaf62"), 
+              title = "Access to Basic Water %",
+              legend.format = list(text.separator = "-"))+ tm_text( "statename", 
+                                                                    col = "black",
+                                                                    #          auto.placement = TRUE,
+                                                                    size = .5)+
+  tm_layout(
+    main.title = "Access to Basic Water %",
+    legend.position = c("right", "bottom"))+
+  tm_scale_bar(breaks = c(0,25,50), text.size = .8, position = c("left","bottom"))+
+  tm_credits(text = "Source: NBS 2019", size = 0.6, fontface = "bold", position = c("right","top"))+
+  tm_compass(type = "4star",size = 1,
+             position = c("left","top"), 
+             cardinal.directions = c('North'),
+             bg.color = 'red',
+             bg.alpha = .13)
+Water
+```
+
+## Access to Basic Hygiene %
+
+```{r echo=FALSE}
+# Access to Basic Hygiene %
+Hygiene= merged_data %>% 
+  tm_shape()+
+  tm_polygons("Access to Basic Hygiene %", 
+              palette = c( "#666666","#B1DAC5","#7570B3","#71B966","#66A61E" ), 
+              title = "Access to Basic Hygiene %",
+              legend.format = list(text.separator = "-"))+ tm_text( "statename", 
+                                                                    col = "black",
+                                                                    #          auto.placement = TRUE,
+                                                                    size = .5)+
+  tm_layout(
+    main.title = "Access to Basic Hygiene %",
+    legend.position = c("right", "bottom"))+
+  tm_scale_bar(breaks = c(0,25,50), text.size = .8, position = c("left","bottom"))+
+  tm_credits(text = "Source: NBS 2019", size = 0.6, fontface = "bold", position = c("right","top"))+
+  tm_compass(type = "4star",size = 1,
+             position = c("left","top"), 
+             cardinal.directions = c('North'),
+             bg.color = 'red',
+             bg.alpha = .13)
+Hygiene
+```
+
+## Health Care Facility in Nigeria
+
+```{r}
+healthcare= merged_data %>% 
+  tm_shape()+
+  tm_polygons("Health Care Facility", 
+              palette = c("skyblue" ,"lightblue","steelblue","#2E5B88","#1B9E77" ), 
+              title = "No of health care Facilities",
+              legend.format = list(text.separator = "-"))+ tm_text( "statename", 
+                                                                    col = "black",
+                                                                    #          auto.placement = TRUE,
+                                                                    size = .5)+
+  tm_layout(
+    main.title = "Health care Facilities across States",
+    legend.position = c("right", "bottom"))+
+  tm_scale_bar(breaks = c(0,25,50), text.size = .8, position = c("left","bottom"))+
+  tm_credits(text = "Source: FMH 2019", size = 0.6, fontface = "bold", position = c("right","top"))+
+  tm_compass(type = "4star",size = 1,
+             position = c("left","top"), 
+             cardinal.directions = c('North'),
+             bg.color = 'red',
+             bg.alpha = .13)
+healthcare
+```
+
+## Contact {background-color="#00308F"}
+
+**Scan to save my Contact!**
+
+![](Contact.jpg){fig-align="center"}
+
+Thank you for Viewing/ Reading my Presentation!
