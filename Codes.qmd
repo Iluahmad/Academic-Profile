@@ -1,0 +1,32 @@
+---
+title: "Codes"
+editor: visual
+---
+
+[Download Energy Model Codes](Energy%20Model.R)
+
+[Download Inflation Workfile](inflation%20flash%20note.wf1)
+
+[Download Energy Subsidy Model](Energy%20Subsidy.tex)
+
+[Download Sample Nigerian Macro Model](NG_model.mod)
+
+[Download Bayesian VAR Model](Bayesian%20VAR%20Model.r)
+
+[Bayesian Linear Regression.r](Bayesian%20Linear%20Regression.r)
+
+[Charts](Charts)
+
+# **Macro Indicators (c)**
+
+![](Macro.gif)
+
+![](GDP_Per%20Capita.gif)
+
+![](Exchange%20Rate.gif)
+
+![Inflation forecast August - November,2024](images/Inflation%20figures-01.png){width="635"}
+
+![Inflation Forecast for June 2024](images/forecast0222.png)
+
+![Nigeria's Access to Basic Water](images/WhatsApp%20Image%202024-09-15%20at%2022.32.53_80517b32.jpg)

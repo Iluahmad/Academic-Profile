@@ -1,0 +1,46 @@
+---
+title: "Mr. Ahmad Ilu"
+image: AHMAD US soft.jpg
+about:
+  id: hero-heading
+  template: trestles
+links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/ahmadilu
+---
+
+Ahmad Ibraheem Ilu is an Economist and a Policy Researcher at the Nigerian Economic Summit Group (NESG). Ahmad Ilu is passionate on specializing in research on Macroeconomic Models such as DSGE-based models, Financial Economics, Monetary Economics, Applied Econometrics, and Islamic Economics. My extensive knowledge and experience have enabled me to participate in interviews on various live TV programs, where I analyze and discuss contemporary Macroeconomic issues, financial markets, and monetary and fiscal policies. I am proficient in the use of various:
+
+• Document Preparation Software: Microsoft Word, PowerPoint, Excel, Latex, and R Markdown
+
+• Statistical software tools: (R & RStudio), Python, EViews, STATA, Matlab, and Dynare.
+
+## Education
+
+Bayero University Kano, BUK \| Kano, Nigeria Msc Economics \| March 2018 - December 2020
+
+Northwest University Kano \| Kano, Nigeria BSc Economics \| March 2012 - November 2016
+
+## Experience
+
+Presidential Fiscal Policy and Tax Reforms Committee (PFPTRC) \| Policy Research \| August 2023 - Present\|
+
+Nigerian Economic Summit Group (NESG)\| Economist / Policy Researcher\| March 2023 - Present\|
+
+Federal University Dutsin-Ma\| Assistant Lecturer\| November 2020 - March 2023\|
+
+Century Care LTD\| Marketing Manager \| November 2017 - March 2023\|
+
+## AWARDS & HONORS
+
+-   Mckinsey Forward Program July, 2024
+-   CFA Institute (Investment Program) July, 2020
+
+[![Scan to Save my Contact](images/WhatsApp%20Image%202024-09-12%20at%2018.50.25_b7dd765d.jpg)](Contact%20Details)

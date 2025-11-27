@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Publications.html",
+    "href": "Publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "# Publications\nHere are some of my selected publications:\n\nGeospatial Beamer\n\nDownload PDF Presented August, 2024.\n\nInflation Flashnotes\nDownload PDF\nUnraveling the Price Puzzle\nDownload PDF Presented on June, 2024.\nEnergy Subsidy Model\nDownload PDF Presented October, 2024.\nNigeria Tax Reform - Theory of Change\n\nDownload PDF Presented July, 2025."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Mr. Ahmad Ilu",
@@ -26,33 +33,5 @@
     "title": "Mr. Ahmad Ilu",
     "section": "AWARDS & HONORS",
     "text": "AWARDS & HONORS\n\nMckinsey Forward Program July, 2024\nCFA Institute (Investment Program) July, 2020\n\n\n\n\nScan to Save my Contact"
-  },
-  {
-    "objectID": "Publications.html",
-    "href": "Publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "# Publications\nHere are some of my selected publications:\n\nGeospatial Beamer\n\nDownload PDF Presented August, 2024.\n\nInflation Flashnotes\nDownload PDF\nUnraveling the Price Puzzle\nDownload PDF Presented on June, 2024.\nExchange Rate Pass-through to Stock Prices: A Multi GARCH Approach\n\n[Download PDF](https://mpra.ub.uni-muenchen.de/98442/1/MPRA_paper_98442.pdf) 2020\n\nOil Price Volatility and Exchange Rate Dynamics in Nigeria: A Markov Switching Approach\n\n[Download PDF](https://mpra.ub.uni-muenchen.de/97643/1/MPRA_paper_97643.pdf) 2020\n\nAnalysis of the nexus between Environmental Quality and Economic growth\n\n[Download PDF](https://mpra.ub.uni-muenchen.de/97369/1/MPRA_paper_97369.pdf)\n\nImpact of Remittances from Nigerians in diaspora on Exchange rate Stability\n\n[Download PDF](https://mpra.ub.uni-muenchen.de/97555/1/MPRA_paper_97555.pdf)\n\nEnergy Subsidy Model\nDownload PDF Presented October, 2024."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I am Ahmad Ibraheem Ilu born and raised in Kano, Nigeria. I had all my previous education here in Nigeria, Undergraduate training at Northwest University Kano, and Postgraduate Studies to obtain M.Sc in Economics at Bayero University, Kano. I am currently an Economist at the Nigerian Economic Summit Group (NESG), the First and Foremost Think-Tank in Nigeria. Alongisde my routine engagements at the NESG, I am part of the NESG Five men delegation sitting at the Ongoing Presidential Fiscal Policy and Tax Reforms Commitee (PFPTR), a commitee inaugruated in August, 2023 by the President Federal Republic of Nigeria to oversee systemic Fiscal Policy and Tax reforms in Nigeria. I was previosuly an Assistant Lecturer at the Department of Economics at the Federal University Dutsin-Ma, Katsina State, Nigeria. Right from the onset, I am very fortunate to know for sure that Economics is my passion and that an academic career is the best path for me. In hindsight, it seems clear that I had from the beginning the traits of a good researcher. Being inquisitive and being always eager to ask questions and to learn has helped in distinguishing myself from school throughout my Bachelor’s and Masters. I am fascinated by Economics, providing an understanding of human action without losing formal rigor. During my undergraduate coursework, I graduated as one of the top 5 graduating students with consistency to average above 4.0 GPA out of the 5.0 Scale in all of the eight semesters attended.\nMajorly, during my B.SC and M.SC, I was determined to specialize in Macroeconomics related areas, i.e Monetary Economics, International Economics, Financial Economics, etc. My passion for Macroeconomics made me a little popular in my neighborhood and my social media community (Twitter and Facebook) where lots of people usually solicit my personal opinion whenever there is a socioeconomic debate on recent Government policies. This has allowed local TV stations to invite me as a guest speaker to Proffer commentaries and analysis on contemporary macroeconomic and public policies in Nigeria on their scheduled economy-related program. My intense passion for research and academics, motivated me to author four academic papers all of which are published in an open-access repository, the web links of all documents are detailed in my C.V. The Research Papers are\n\nImpact of Remittances from Nigerians in diaspora on Exchange Rate Stability (2019).\nAnalysis of the nexus between environmental quality and economic growth (2019).\nOil Price Volatility and Exchange Rate Dynamics (2019).\nExchange Pass-Through to Stock Prices: A Multi-GARCH Approach(2020).\n\nAlso given my enthusiasm and zeal toward research in Economics, I have been to steadfastly determined to equip myself with global best-practicing research techniques and software such as R programming language using Rstudio (now, “Posit”) R-markdown, Latex, Stata, Eviews, GitHub, Matlab and Dynare in a view to boost my research efficacy and Prowess.\nDuring my Master’s program at Bayero University Kano (BUK), a top University in Nigeria, I learned the core tools used in modern economic research: Macro and Microeconomics theory, Statistics, Econometrics, and advanced math (including Linear Algebra, Matrix Algebra, Differential Equations, Difference Equations, Eigen Vectors, and Eigen Values, Dynamic Optimization; Calculus of Variation, Optimal Control, and DSGE Modelling; Representative Agent Model, Overlapping Generation Model and the likes of RBC variant Models ), all following the standard practice on the top departments in the world. Modelling the general equilibrium of an economy usually falls under the framework of Dynamic Stochastic General Equilibrium (DSGE) based Models which encapsulates rigorous mathematical tools such as the multivariate calculus; differential equation, difference equations, Optimal control theory, Bellman equations( recursive method) and Lagrangian optimization (Sequential methods ). I also took elective courses related to my main interests: Monetary economics, Financial economics, and International trade. This reiterates my genuine desire to stay in academia, research and policy. I have written my Dissertation on the “ANALYSIS OF KEY DETERMINANTS OF EXCHANGE RATE STABILITY IN NIGERIA” Via the Auto-regressive Distributed Lag model (ARDL) using Nigeria’s time-series data. I also have experience as a Graduate Assistant and Assistant Lecturer; teaching various undergraduate courses and supervising dissertations at the Federal University of Dutsin-Ma."
-  },
-  {
-    "objectID": "Codes.html",
-    "href": "Codes.html",
-    "title": "Codes",
-    "section": "",
-    "text": "Download Energy Model Codes\nDownload Inflation Workfile\nDownload Energy Subsidy Model\nDownload Sample Nigerian Macro Model\nDownload Bayesian VAR Model\nCharts\n\nMacro Indicators\n\n\n\nMacro GIF\n\n\n\n\n\nGDP Per Capita\n\n\n\n\n\nExchange Rate\n\n\n\n\n\nInflation forecast August - November,2024\n\n\n\n\n\nInflation Forecast for June 2024\n\n\n\n\n\nNigeria’s Access to Basic Water"
-  },
-  {
-    "objectID": "indexx.html",
-    "href": "indexx.html",
-    "title": "Iluahmad",
-    "section": "",
-    "text": "project: type: website output-dir: docs\nwebsite: title: “Iluahmad” navbar: back-to-top-navigation: true page-footer: “Copyright 2024, Ahmad Ilu” left: - href: index.qmd text: Home - about.qmd - Publications.qmd - href: Data.qmd text: Data - href: Codes.qmd text: Codes and Charts tools: - icon: twitter href: https://x.com/IluAhmad_ - icon: github menu: - text: Source Code href: https://github.com/Iluahmad/Academic-Profile - text: Report a Bug href: https://github.com/Iluahmad\nformat: html: theme: sandstone css: styles.css toc: true"
   }
 ]

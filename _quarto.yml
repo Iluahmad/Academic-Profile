@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+
+website:
+  title: "Iluahmad"
+  navbar:
+    search: true
+    back-to-top-navigation: true
+    page-footer: "Copyright 2024, Ahmad Ilu" 
+  
+    left:
+        - text: "Home"
+          href: index.qmd
+        - about.qmd
+        - Publications.qmd
+        - Data.qmd 
+        - Codes.qmd
+         
+    tools:
+      - icon: twitter
+        href: https://x.com/IluAhmad_
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/Iluahmad/Academic-Profile
+          - text: Report a Bug
+            href:  https://github.com/Iluahmad
+        
+ 
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+    toc: true
+
+
+

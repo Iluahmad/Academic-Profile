@@ -1,0 +1,28 @@
+---
+title: "Publications"
+editor: visual
+---
+
+\# Publications
+
+Here are some of my selected publications:
+
+1.  **Geospatial Beamer**
+
+[Download PDF](Beamer-Geospatial.pdf) Presented August, 2024./
+
+2.  **Inflation Flashnotes**
+
+    [Download PDF](Inflation%20Flash%20note.pdf)
+
+3.  **Unraveling the Price Puzzle**
+
+    [Download PDF](Unraveling%20the%20Price%20Puzzle.pdf) Presented on June, 2024.
+
+4.  Energy Subsidy Model
+
+    [Download PDF](Energy%20Subsidy.pdf "Energy Subsidy Model") Presented October, 2024.
+
+5.  **Nigeria Tax Reform - Theory of Change**
+
+[Download PDF](Nigerian_Tax_Reform_ToC_2025%20-%20Ahmad%20Ilu.pdf "Nigerian Tax Refrom - Theory of Change") Presented July, 2025.
